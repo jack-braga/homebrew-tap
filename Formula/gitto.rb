@@ -5,13 +5,13 @@
 class Gitto < Formula
   desc "Multi-repo Git TUI workspace manager"
   homepage "https://github.com/jack-braga/gitto"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jack-braga/gitto/releases/download/v0.1.0/gitto_0.1.0_darwin_arm64.tar.gz"
-      sha256 "53fc8f37bb119aa740ce4991061382bbb4fc904c439c43ba1156c7641a7bbb7e"
+      url "https://github.com/jack-braga/gitto/releases/download/v0.1.1/gitto_0.1.1_darwin_arm64.tar.gz"
+      sha256 "09f704f85c1b68edcfba3ea3b02c980f35c23171109778d63d4ccc42e9dd0c6f"
 
       define_method(:install) do
         bin.install "gitto"
@@ -21,8 +21,8 @@ class Gitto < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jack-braga/gitto/releases/download/v0.1.0/gitto_0.1.0_linux_arm64.tar.gz"
-      sha256 "4e35c93c26a46f4fcf26873ff8b76aacf5aab95f6b28f8293acb9f8feafc309f"
+      url "https://github.com/jack-braga/gitto/releases/download/v0.1.1/gitto_0.1.1_linux_arm64.tar.gz"
+      sha256 "dfca785c3a9fa4a2ac5889f08e981cbb6a2f8a0ae1a2fb5edd631e2317671c29"
       define_method(:install) do
         bin.install "gitto"
       end
